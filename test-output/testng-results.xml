@@ -1,17 +1,476 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-07T01:51:55 EDT" name="EmpDataRESTAPISuite" finished-at="2020-05-07T01:52:37 EDT" duration-ms="41828">
+  <suite started-at="2020-05-12T03:41:51 EDT" name="EmpDataRESTAPISuite" finished-at="2020-05-12T03:54:58 EDT" duration-ms="787680">
     <groups>
     </groups>
-    <test started-at="2020-05-07T01:51:55 EDT" name="Test" finished-at="2020-05-07T01:52:37 EDT" duration-ms="41828">
-      <class name="com.empdataapi.testcases.TC1_Get_All_Employee_Data">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:51:55 EDT" name="setup" finished-at="2020-05-07T01:51:55 EDT" duration-ms="71" status="PASS">
+    <test started-at="2020-05-12T03:41:51 EDT" name="Test" finished-at="2020-05-12T03:54:58 EDT" duration-ms="787680">
+      <class name="com.empdataapi.testcases.TC2_Get_Single_Employee_Data">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:46:37 EDT" name="setup" finished-at="2020-05-12T03:46:37 EDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="getAllEmployees(java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:51:55 EDT" name="getAllEmployees" finished-at="2020-05-07T01:52:02 EDT" duration-ms="6634" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:46:37 EDT" name="init" finished-at="2020-05-12T03:46:37 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:46:38 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:46:44 EDT" duration-ms="5878" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tiger Nixon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320800]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[61]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.checkResponseBody(TC2_Get_Single_Employee_Data.java:63)
+at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.callMethods(TC2_Get_Single_Employee_Data.java:46)
+at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee(TC2_Get_Single_Employee_Data.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:46:44 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:47:40 EDT" duration-ms="55906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Airi Satou]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[162700]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:47:40 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:48:37 EDT" duration-ms="56379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sonya Frost]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[103600]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:48:37 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:49:32 EDT" duration-ms="55646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jena Gaines]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[90560]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:49:32 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:50:28 EDT" duration-ms="55925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tatyana Fitzpatrick]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[385750]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:50:28 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:51:25 EDT" duration-ms="57092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dai Rios]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[217500]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:51:25 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:52:21 EDT" duration-ms="55834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jenette Caldwell]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[345000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="getEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:52:21 EDT" name="getEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:53:17 EDT" duration-ms="55596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doris Wilder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[85600]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7]" started-at="2020-05-12T03:53:17 EDT" name="tearDown" finished-at="2020-05-12T03:53:17 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.empdataapi.testcases.TC2_Get_Single_Employee_Data -->
+      <class name="com.empdataapi.testcases.TC1_Get_All_Employee_Data">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:41:51 EDT" name="setup" finished-at="2020-05-12T03:41:51 EDT" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="getAllEmployees(java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:41:51 EDT" name="getAllEmployees" finished-at="2020-05-12T03:41:58 EDT" duration-ms="7369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +486,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllEmployees -->
-        <test-method signature="checkResponseBody()[pri:1, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:02 EDT" name="checkResponseBody" finished-at="2020-05-07T01:52:07 EDT" duration-ms="5042" status="PASS">
+        <test-method signature="checkResponseBody()[pri:1, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:41:58 EDT" name="checkResponseBody" finished-at="2020-05-12T03:42:03 EDT" duration-ms="5028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseBody -->
-        <test-method signature="checkStatusCode(int)[pri:2, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:07 EDT" name="checkStatusCode" finished-at="2020-05-07T01:52:12 EDT" duration-ms="5003" status="PASS">
+        <test-method signature="checkStatusCode(int)[pri:2, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:03 EDT" name="checkStatusCode" finished-at="2020-05-12T03:42:08 EDT" duration-ms="5003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +501,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkStatusLine(java.lang.String)[pri:3, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:12 EDT" name="checkStatusLine" finished-at="2020-05-07T01:52:17 EDT" duration-ms="5001" status="PASS">
+        <test-method signature="checkStatusLine(java.lang.String)[pri:3, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:08 EDT" name="checkStatusLine" finished-at="2020-05-12T03:42:13 EDT" duration-ms="5002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +512,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusLine -->
-        <test-method signature="checkContentType(java.lang.String)[pri:4, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:17 EDT" name="checkContentType" finished-at="2020-05-07T01:52:22 EDT" duration-ms="5003" status="PASS">
+        <test-method signature="checkContentType(java.lang.String)[pri:4, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:13 EDT" name="checkContentType" finished-at="2020-05-12T03:42:18 EDT" duration-ms="5002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,7 +523,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContentType -->
-        <test-method signature="checkServerType(java.lang.String)[pri:5, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:22 EDT" name="checkServerType" finished-at="2020-05-07T01:52:27 EDT" duration-ms="5002" status="PASS">
+        <test-method signature="checkServerType(java.lang.String)[pri:5, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:18 EDT" name="checkServerType" finished-at="2020-05-12T03:42:23 EDT" duration-ms="5002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +534,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkServerType -->
-        <test-method signature="checkContentEncoding(java.lang.String)[pri:6, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:27 EDT" name="checkContentEncoding" finished-at="2020-05-07T01:52:32 EDT" duration-ms="5003" status="PASS">
+        <test-method signature="checkContentEncoding(java.lang.String)[pri:6, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:23 EDT" name="checkContentEncoding" finished-at="2020-05-12T03:42:28 EDT" duration-ms="5002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,7 +545,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContentEncoding -->
-        <test-method signature="checkContentLength(int)[pri:7, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:32 EDT" name="checkContentLength" finished-at="2020-05-07T01:52:37 EDT" duration-ms="5002" status="PASS">
+        <test-method signature="checkContentLength(int)[pri:7, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:28 EDT" name="checkContentLength" finished-at="2020-05-12T03:42:33 EDT" duration-ms="5003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,11 +556,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContentLength -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b]" started-at="2020-05-07T01:52:37 EDT" name="tearDown" finished-at="2020-05-07T01:52:37 EDT" duration-ms="1" status="PASS">
+        <test-method signature="checkAllEmpData()[pri:8, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:42:33 EDT" name="checkAllEmpData" finished-at="2020-05-12T03:46:37 EDT" duration-ms="243266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAllEmpData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3]" started-at="2020-05-12T03:46:37 EDT" name="tearDown" finished-at="2020-05-12T03:46:37 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.empdataapi.testcases.TC1_Get_All_Employee_Data -->
+      <class name="com.empdataapi.testcases.TC3_Create_New_Employee">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc]" started-at="2020-05-12T03:53:17 EDT" name="setup" finished-at="2020-05-12T03:53:17 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc]" started-at="2020-05-12T03:53:17 EDT" name="init" finished-at="2020-05-12T03:53:17 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="postEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc]" started-at="2020-05-12T03:53:17 EDT" name="postEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:54:08 EDT" duration-ms="50849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John J. Galvin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[185000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postEmployee -->
+        <test-method signature="postEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc]" started-at="2020-05-12T03:54:08 EDT" name="postEmployee" data-provider="empdataprovider" finished-at="2020-05-12T03:54:58 EDT" duration-ms="50589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gary W. Kilbourne]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[91185]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HTTP/1.1 200 OK]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[application/json;charset=utf-8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[nginx/1.16.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc]" started-at="2020-05-12T03:54:58 EDT" name="tearDown" finished-at="2020-05-12T03:54:58 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.empdataapi.testcases.TC3_Create_New_Employee -->
     </test> <!-- Test -->
   </suite> <!-- EmpDataRESTAPISuite -->
 </testng-results>

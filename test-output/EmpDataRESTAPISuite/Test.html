@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 07 01:51:55 EDT 2020</td>
+<td>Started on:</td><td>Tue May 12 03:41:51 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41828 ms)</td>
+<tr><td>Total time:</td><td>787 seconds (787680 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,57 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.checkResponseBody(TC2_Get_Single_Employee_Data.java:63)
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.callMethods(TC2_Get_Single_Employee_Data.java:46)
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee(TC2_Get_Single_Employee_Data.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace877788296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace877788296'><pre>java.lang.NullPointerException
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.checkResponseBody(TC2_Get_Single_Employee_Data.java:63)
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.callMethods(TC2_Get_Single_Employee_Data.java:46)
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee(TC2_Get_Single_Employee_Data.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,40 +126,90 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkAllEmpData()'><b>checkAllEmpData</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data</td>
+<td></td>
+<td>243</td>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
+<tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkContentEncoding()'><b>checkContentEncoding</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data<br>Parameters: gzip</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
 <tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkContentLength()'><b>checkContentLength</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data<br>Parameters: 600</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
 <tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkContentType()'><b>checkContentType</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data<br>Parameters: application/json;charset=utf-8</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
 <tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
 <tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkServerType()'><b>checkServerType</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data<br>Parameters: nginx/1.16.0</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
 <tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data<br>Parameters: 200</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
 <tr>
 <td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data<br>Parameters: HTTP/1.1 200 OK</td>
 <td></td>
 <td>5</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@71b1176b</td></tr>
+<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@48aaecc3</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>55</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>56</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>55</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>55</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>57</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>55</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee()'><b>getEmployee</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data<br>Parameters: 24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>55</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@7c0c77c7</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC3_Create_New_Employee.postEmployee()'><b>postEmployee</b><br>Test class: com.empdataapi.testcases.TC3_Create_New_Employee<br>Parameters: John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>50</td>
+<td>com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc</td></tr>
+<tr>
+<td title='com.empdataapi.testcases.TC3_Create_New_Employee.postEmployee()'><b>postEmployee</b><br>Test class: com.empdataapi.testcases.TC3_Create_New_Employee<br>Parameters: Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200</td>
+<td></td>
+<td>50</td>
+<td>com.empdataapi.testcases.TC3_Create_New_Employee@7adda9cc</td></tr>
 </table><p>
 </body>
 </html>

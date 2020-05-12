@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 06 14:26:45 EDT 2020</td>
+<td>Started on:</td><td>Sun May 10 18:49:17 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (50 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2112 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,145 +67,18 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.setup()'><b>setup</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;empid&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Basement\AppData\Local\Temp\testng-eclipse-32713686\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:272)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1107024580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1107024580'><pre>org.testng.TestNGException: 
-Parameter &apos;empid&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Basement\AppData\Local\Temp\testng-eclipse-32713686\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:272)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>-1588789605</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@4e91d63f</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.empdataapi.testcases.TC1_Get_All_Employee_Data.checkArgs()'><b>checkArgs</b><br>Test class: com.empdataapi.testcases.TC1_Get_All_Employee_Data</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;baseurl&apos; is required by @Test on method checkArgs but has not been marked @Optional or defined
-in C:\Users\Basement\AppData\Local\Temp\testng-eclipse-32713686\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:272)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace306115458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace306115458'><pre>org.testng.TestNGException: 
-Parameter &apos;baseurl&apos; is required by @Test on method checkArgs but has not been marked @Optional or defined
-in C:\Users\Basement\AppData\Local\Temp\testng-eclipse-32713686\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:272)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.empdataapi.testcases.TC1_Get_All_Employee_Data@4e91d63f</td></tr>
+<td title='com.empdataapi.testcases.TC2_Get_Single_Employee_Data.test()'><b>test</b><br>Test class: com.empdataapi.testcases.TC2_Get_Single_Employee_Data</td>
+<td></td>
+<td>2</td>
+<td>com.empdataapi.testcases.TC2_Get_Single_Employee_Data@6dbb137d</td></tr>
 </table><p>
 </body>
 </html>

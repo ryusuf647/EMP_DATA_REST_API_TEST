@@ -1,4 +1,12 @@
 package com.empdataapi.testcases;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -7,6 +15,9 @@ import org.testng.asserts.SoftAssert;
 import com.empdataapi.base.EmpBaseTest;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
+import io.restassured.path.json.JsonPath;
+
+//NOTE: Change to work with reqres.in, problems with API Methods on previous website (http://dummy.restapiexample.com/api/v1)
 
 public class TC1_Get_All_Employee_Data extends EmpBaseTest {
 
@@ -129,6 +140,75 @@ public class TC1_Get_All_Employee_Data extends EmpBaseTest {
 		sa.assertEquals(contentlength > Integer.parseInt(response.header("Content-Length")), true);
 		sa.assertAll();
 		Thread.sleep(5000);
+	}
+	
+	@Test(priority=8)
+	void checkAllEmpData() throws InterruptedException {		 
+		JsonPath jsonpath =response.jsonPath();
+		JSONParser parser = new JSONParser();
+		String path=System.getProperty("user.dir")+"\\empdata.json";
+	    try {
+			Object obj = parser.parse(new FileReader(path));
+			JSONObject json = (JSONObject) obj;
+			JSONArray values = (JSONArray) json.get("data");
+			for(int i = 0; jsonpath.get("data["+i+"].id") != null; i++) {
+				SoftAssert sa = new SoftAssert();
+				JSONObject employee = (JSONObject) values.get(i);
+				logger.info("Now validating employee " + (i+1) + ": " + jsonpath.get("data["+i+"].employee_name"));
+				Thread.sleep(2000);
+				
+				//VALIDATE ID
+				logger.info("VALIDATING ID...");
+				if(employee.get("id").equals(jsonpath.get("data["+i+"].id"))) {
+					logger.info("ID CONFIRMED");
+				} else {
+					logger.error("ERROR VALIDATING ID");
+				}
+				sa.assertEquals(employee.get("id").equals(jsonpath.get("data["+i+"].id")), true);
+				Thread.sleep(2000);
+				
+				//VALIDATE NAME
+				logger.info("VALIDATING NAME...");
+				if(employee.get("employee_name").equals(jsonpath.get("data["+i+"].employee_name"))) {
+					logger.info("NAME CONFIRMED");
+				} else {
+					logger.error("ERROR VALIDATING NAME");
+				}
+				sa.assertEquals(employee.get("employee_name").equals(jsonpath.get("data["+i+"].employee_name")),true);
+				Thread.sleep(2000);
+				
+				//VALIDATE AGE
+				logger.info("VALIDATING AGE...");
+				if(employee.get("employee_age").equals(jsonpath.get("data["+i+"].employee_age"))) {
+					logger.info("AGE CONFIRMED");
+				} else {
+					logger.error("ERROR VALIDATING AGE");
+				}
+				sa.assertEquals(employee.get("employee_age").equals(jsonpath.get("data["+i+"].employee_age")),true);
+				Thread.sleep(2000);
+				
+				//VALIDATE SALARY
+				logger.info("VALIDATING SALARY...");
+				if(employee.get("employee_salary").equals(jsonpath.get("data["+i+"].employee_salary"))) {
+					logger.info("SALARY CONFIRMED");
+				} else {
+					logger.error("ERROR VALIDATING SALARY");
+				}
+				sa.assertEquals(employee.get("employee_salary").equals(jsonpath.get("data["+i+"].employee_salary")),true);
+				sa.assertAll();
+				Thread.sleep(2000);
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}			
+		Thread.sleep(1000);
 	}
 	
 	@AfterClass

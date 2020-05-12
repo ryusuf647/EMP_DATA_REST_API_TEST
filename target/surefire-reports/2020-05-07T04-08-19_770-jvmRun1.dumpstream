@@ -1,0 +1,141 @@
+# Created at 2020-05-07T04:08:31.649
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+
+# Created at 2020-05-07T04:08:32.632
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkResponseBody(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:08:32.632
+Unexpected IOException: 5,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkStatusCode(com.empdataapi.testcases.TC1_Get_All_Employee_Data),com.empdataapi.testcases.TC1_Get_All_Employee_Data,null,null
+
+
+# Created at 2020-05-07T04:08:32.632
+Unexpected IOException with stream: 2020-05-07 04:08:32 INFO  EmpDataRestAPI:42 - ******** CHECKING THE STATUS CODE ********
+
+
+# Created at 2020-05-07T04:08:32.632
+Unexpected IOException with stream: 2020-05-07 04:08:32 INFO  EmpDataRestAPI:43 - Status code==>200
+
+
+# Created at 2020-05-07T04:08:32.632
+Unexpected IOException with stream: 2020-05-07 04:08:32 INFO  EmpDataRestAPI:45 - ******** STATUS CODE VALIDATION SUCCESSFUL ********
+
+
+# Created at 2020-05-07T04:08:37.634
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkStatusCode(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:08:37.635
+Unexpected IOException: 5,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkStatusLine(com.empdataapi.testcases.TC1_Get_All_Employee_Data),com.empdataapi.testcases.TC1_Get_All_Employee_Data,null,null
+
+
+# Created at 2020-05-07T04:08:37.636
+Unexpected IOException with stream: 2020-05-07 04:08:37 INFO  EmpDataRestAPI:58 - ******** CHECKING THE STATUS LINE ********
+
+
+# Created at 2020-05-07T04:08:37.637
+Unexpected IOException with stream: 2020-05-07 04:08:37 INFO  EmpDataRestAPI:59 - Status line==>HTTP/1.1 200 OK
+
+
+# Created at 2020-05-07T04:08:37.637
+Unexpected IOException with stream: 2020-05-07 04:08:37 INFO  EmpDataRestAPI:61 - ******** STATUS LINE VALIDATION SUCCESSFUL ********
+
+
+# Created at 2020-05-07T04:08:42.640
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkStatusLine(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:08:42.640
+Unexpected IOException: 5,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkContentType(com.empdataapi.testcases.TC1_Get_All_Employee_Data),com.empdataapi.testcases.TC1_Get_All_Employee_Data,null,null
+
+
+# Created at 2020-05-07T04:08:42.640
+Unexpected IOException with stream: 2020-05-07 04:08:42 INFO  EmpDataRestAPI:74 - ******** CHECKING THE CONTENT TYPE ********
+
+
+# Created at 2020-05-07T04:08:42.640
+Unexpected IOException with stream: 2020-05-07 04:08:42 INFO  EmpDataRestAPI:75 - Content Type==>application/json;charset=utf-8
+
+
+# Created at 2020-05-07T04:08:42.640
+Unexpected IOException with stream: 2020-05-07 04:08:42 INFO  EmpDataRestAPI:77 - ******** CONTENT TYPE VALIDATION SUCCESSFUL ********
+
+
+# Created at 2020-05-07T04:08:47.645
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkContentType(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:08:47.645
+Unexpected IOException: 5,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkServerType(com.empdataapi.testcases.TC1_Get_All_Employee_Data),com.empdataapi.testcases.TC1_Get_All_Employee_Data,null,null
+
+
+# Created at 2020-05-07T04:08:47.645
+Unexpected IOException with stream: 2020-05-07 04:08:47 INFO  EmpDataRestAPI:90 - ******** CHECKING THE SERVER TYPE ********
+
+
+# Created at 2020-05-07T04:08:47.645
+Unexpected IOException with stream: 2020-05-07 04:08:47 INFO  EmpDataRestAPI:91 - Server Type==>nginx/1.16.0
+
+
+# Created at 2020-05-07T04:08:47.645
+Unexpected IOException with stream: 2020-05-07 04:08:47 INFO  EmpDataRestAPI:93 - ******** SERVER TYPE VALIDATION SUCCESSFUL ********
+
+
+# Created at 2020-05-07T04:08:52.646
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkServerType(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:08:52.647
+Unexpected IOException: 5,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkContentEncoding(com.empdataapi.testcases.TC1_Get_All_Employee_Data),com.empdataapi.testcases.TC1_Get_All_Employee_Data,null,null
+
+
+# Created at 2020-05-07T04:08:52.648
+Unexpected IOException with stream: 2020-05-07 04:08:52 INFO  EmpDataRestAPI:106 - ******** CHECKING THE CONTENT ENCODING ********
+
+
+# Created at 2020-05-07T04:08:52.649
+Unexpected IOException with stream: 2020-05-07 04:08:52 INFO  EmpDataRestAPI:107 - Content Encoding==>gzip
+
+
+# Created at 2020-05-07T04:08:52.649
+Unexpected IOException with stream: 2020-05-07 04:08:52 INFO  EmpDataRestAPI:109 - ******** CONTENT ENCODING VALIDATION SUCCESSFUL ********
+
+
+# Created at 2020-05-07T04:08:57.665
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkContentEncoding(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:08:57.665
+Unexpected IOException: 5,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkContentLength(com.empdataapi.testcases.TC1_Get_All_Employee_Data),com.empdataapi.testcases.TC1_Get_All_Employee_Data,null,null
+
+
+# Created at 2020-05-07T04:08:57.665
+Unexpected IOException with stream: 2020-05-07 04:08:57 INFO  EmpDataRestAPI:122 - ******** CHECKING THE CONTENT LENGTH ********
+
+
+# Created at 2020-05-07T04:08:57.665
+Unexpected IOException with stream: 2020-05-07 04:08:57 INFO  EmpDataRestAPI:123 - Content Length==>595
+
+
+# Created at 2020-05-07T04:08:57.665
+Unexpected IOException with stream: 2020-05-07 04:08:57 INFO  EmpDataRestAPI:125 - ******** CONTENT LENGTH VALIDATION SUCCESSFUL ********
+
+
+# Created at 2020-05-07T04:09:02.674
+Unexpected IOException: 6,1,com.empdataapi.testcases.TC1_Get_All_Employee_Data,checkContentLength(com.empdataapi.testcases.TC1_Get_All_Employee_Data),null,null,null
+
+
+# Created at 2020-05-07T04:09:02.674
+Unexpected IOException with stream: 2020-05-07 04:09:02 INFO  EmpDataRestAPI:136 - ********FINISHED EXECUTION, TEST CASE: TC1_Get_All_Employee_Data********
+
+
+# Created at 2020-05-07T04:09:02.752
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

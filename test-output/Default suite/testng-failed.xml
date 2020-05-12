@@ -6,7 +6,9 @@
       <class name="com.empdataapi.testcases.TC1_Get_All_Employee_Data">
         <methods>
           <include name="setup"/>
-          <include name="checkArgs"/>
+          <include name="checkEmpData"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
         </methods>
       </class> <!-- com.empdataapi.testcases.TC1_Get_All_Employee_Data -->
     </classes>

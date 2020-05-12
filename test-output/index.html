@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-EmpDataRESTAPISuite" class="navigator-link">
-              <span class="suite-name border-passed">EmpDataRESTAPISuite</span>
+              <span class="suite-name border-failed">EmpDataRESTAPISuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EmpDataRESTAPISuite" class="hide-methods failed suite-EmpDataRESTAPISuite"> (hide)</a> <!-- hide-methods failed suite-EmpDataRESTAPISuite -->
+                      <a href="#" panel-name="suite-EmpDataRESTAPISuite" class="show-methods failed suite-EmpDataRESTAPISuite"> (show)</a> <!-- show-methods failed suite-EmpDataRESTAPISuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EmpDataRESTAPISuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">getEmployee(1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EmpDataRESTAPISuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +114,11 @@
                       <a href="#" panel-name="suite-EmpDataRESTAPISuite" class="show-methods passed suite-EmpDataRESTAPISuite"> (show)</a> <!-- show-methods passed suite-EmpDataRESTAPISuite -->
                     </span>
                     <div class="method-list-content passed suite-EmpDataRESTAPISuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC1_Get_All_Employee_Data" class="method navigator-link" hash-for-method="checkAllEmpData">checkAllEmpData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC1_Get_All_Employee_Data" class="method navigator-link" hash-for-method="checkContentEncoding(gzip)">checkContentEncoding(gzip)</a> <!-- method navigator-link -->
@@ -135,6 +154,51 @@
                         <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC1_Get_All_Employee_Data" class="method navigator-link" hash-for-method="checkStatusLine(HTTP/1.1 200 OK)">checkStatusLine(HTTP/1.1 200 OK)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">getEmployee(5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">getEmployee(20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0...)">getEmployee(21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">getEmployee(10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">getEmployee(24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.1...)">getEmployee(15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC2_Get_Single_Employee_Data" class="method navigator-link" hash-for-method="getEmployee(11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">getEmployee(11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC3_Create_New_Employee" class="method navigator-link" hash-for-method="postEmployee(Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 20...)">postEmployee(Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 20...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmpDataRESTAPISuite" title="com.empdataapi.testcases.TC3_Create_New_Employee" class="method navigator-link" hash-for-method="postEmployee(John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">postEmployee(John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-EmpDataRESTAPISuite -->
                   </li>
                 </ul>
@@ -147,12 +211,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-EmpDataRESTAPISuite" class="panel EmpDataRESTAPISuite">
+          <div class="suite-EmpDataRESTAPISuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.empdataapi.testcases.TC2_Get_Single_Employee_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- getEmployee(1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.checkResponseBody(TC2_Get_Single_Employee_Data.java:63)
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.callMethods(TC2_Get_Single_Employee_Data.java:46)
+	at com.empdataapi.testcases.TC2_Get_Single_Employee_Data.getEmployee(TC2_Get_Single_Employee_Data.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmpDataRESTAPISuite-class-failed -->
           <div class="suite-EmpDataRESTAPISuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.empdataapi.testcases.TC1_Get_All_Employee_Data</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAllEmpData">
+                  </a> <!-- checkAllEmpData -->
+                  <span class="method-name">checkAllEmpData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkContentEncoding(gzip)">
@@ -210,6 +304,94 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-EmpDataRESTAPISuite-class-passed -->
+          <div class="suite-EmpDataRESTAPISuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.empdataapi.testcases.TC3_Create_New_Employee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postEmployee(Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 20...)">
+                  </a> <!-- postEmployee(Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 20...) -->
+                  <span class="method-name">postEmployee</span>
+                  <span class="parameters">(Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postEmployee(John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- postEmployee(John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">postEmployee</span>
+                  <span class="parameters">(John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmpDataRESTAPISuite-class-passed -->
+          <div class="suite-EmpDataRESTAPISuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.empdataapi.testcases.TC2_Get_Single_Employee_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- getEmployee(5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- getEmployee(20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0...)">
+                  </a> <!-- getEmployee(21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0...) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- getEmployee(10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- getEmployee(24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.1...)">
+                  </a> <!-- getEmployee(15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.1...) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmployee(11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)">
+                  </a> <!-- getEmployee(11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200) -->
+                  <span class="method-name">getEmployee</span>
+                  <span class="parameters">(11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmpDataRESTAPISuite-class-passed -->
         </div> <!-- panel EmpDataRESTAPISuite -->
         <div panel-name="test-xml-EmpDataRESTAPISuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -220,6 +402,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;EmpDataRESTAPISuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.empdataapi.utilities.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;statuscode&quot; value=&quot;200&quot;/&gt;
     &lt;parameter name=&quot;empid&quot; value=&quot;19&quot;/&gt;
@@ -232,6 +417,8 @@
     &lt;parameter name=&quot;contentlength&quot; value=&quot;600&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.empdataapi.testcases.TC1_Get_All_Employee_Data&quot;/&gt;
+      &lt;class name=&quot;com.empdataapi.testcases.TC2_Get_Single_Employee_Data&quot;/&gt;
+      &lt;class name=&quot;com.empdataapi.testcases.TC3_Create_New_Employee&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- EmpDataRESTAPISuite --&gt;
@@ -245,7 +432,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,40 +458,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkResponseBody')
+data.setCell(0, 1, 'checkAllEmpData')
 data.setCell(0, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(0, 3, 5042);
+data.setCell(0, 3, 243266);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkStatusCode')
-data.setCell(1, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(1, 3, 5003);
+data.setCell(1, 1, 'getEmployee')
+data.setCell(1, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(1, 3, 57092);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkContentType')
-data.setCell(2, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(2, 3, 5003);
+data.setCell(2, 1, 'getEmployee')
+data.setCell(2, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(2, 3, 56379);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkContentEncoding')
-data.setCell(3, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(3, 3, 5003);
+data.setCell(3, 1, 'getEmployee')
+data.setCell(3, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(3, 3, 55925);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkContentLength')
-data.setCell(4, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(4, 3, 5002);
+data.setCell(4, 1, 'getEmployee')
+data.setCell(4, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(4, 3, 55906);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkServerType')
-data.setCell(5, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(5, 3, 5002);
+data.setCell(5, 1, 'getEmployee')
+data.setCell(5, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(5, 3, 55834);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkStatusLine')
-data.setCell(6, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
-data.setCell(6, 3, 5001);
+data.setCell(6, 1, 'getEmployee')
+data.setCell(6, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(6, 3, 55646);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getEmployee')
+data.setCell(7, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(7, 3, 55596);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'postEmployee')
+data.setCell(8, 2, 'com.empdataapi.testcases.TC3_Create_New_Employee')
+data.setCell(8, 3, 50849);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'postEmployee')
+data.setCell(9, 2, 'com.empdataapi.testcases.TC3_Create_New_Employee')
+data.setCell(9, 3, 50589);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getEmployee')
+data.setCell(10, 2, 'com.empdataapi.testcases.TC2_Get_Single_Employee_Data')
+data.setCell(10, 3, 5878);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkResponseBody')
+data.setCell(11, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(11, 3, 5028);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkStatusCode')
+data.setCell(12, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(12, 3, 5003);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkContentLength')
+data.setCell(13, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(13, 3, 5003);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkContentType')
+data.setCell(14, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(14, 3, 5002);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkStatusLine')
+data.setCell(15, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(15, 3, 5002);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkServerType')
+data.setCell(16, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(16, 3, 5002);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkContentEncoding')
+data.setCell(17, 2, 'com.empdataapi.testcases.TC1_Get_All_Employee_Data')
+data.setCell(17, 3, 5002);
 window.suiteTableData['EmpDataRESTAPISuite']= { tableData: data, tableDiv: 'times-div-EmpDataRESTAPISuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
               <div id="times-div-EmpDataRESTAPISuite">
               </div> <!-- times-div-EmpDataRESTAPISuite -->
             </div> <!-- times-div -->
@@ -337,39 +568,115 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">getAllEmployees(http://dummy.restapiexample.com/api/v1, /employees)</span>
-                <span class="method-start">71 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkResponseBody</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">7405 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkStatusCode(200)</span>
-                <span class="method-start">11785 ms</span>
+                <span class="method-start">12449 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkStatusLine(HTTP/1.1 200 OK)</span>
-                <span class="method-start">16790 ms</span>
+                <span class="method-start">17454 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkContentType(application/json;charset=utf-8)</span>
-                <span class="method-start">21793 ms</span>
+                <span class="method-start">22457 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkServerType(nginx/1.16.0)</span>
-                <span class="method-start">26797 ms</span>
+                <span class="method-start">27460 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkContentEncoding(gzip)</span>
-                <span class="method-start">31800 ms</span>
+                <span class="method-start">32463 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkContentLength(600)</span>
-                <span class="method-start">36804 ms</span>
+                <span class="method-start">37466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAllEmpData</span>
+                <span class="method-start">42470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41807 ms</span>
+                <span class="method-start">285737 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.empdataapi.testcases.TC2_Get_Single_Employee_Data</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">285738 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">285741 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getEmployee(1, Tiger Nixon, 320800, 61, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">287587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(5, Airi Satou, 162700, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">293467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(10, Sonya Frost, 103600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">349374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(11, Jena Gaines, 90560, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">405754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(15, Tatyana Fitzpatrick, 385750, 19, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.1...)</span>
+                <span class="method-start">461401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(20, Dai Rios, 217500, 35, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">517327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(21, Jenette Caldwell, 345000, 30, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0...)</span>
+                <span class="method-start">574420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmployee(24, Doris Wilder, 85600, 23, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">630255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">685852 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.empdataapi.testcases.TC3_Create_New_Employee</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">685852 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">685854 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">postEmployee(John J. Galvin, 185000, 20, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 200)</span>
+                <span class="method-start">686075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postEmployee(Gary W. Kilbourne, 91185, 33, 200, HTTP/1.1 200 OK, application/json;charset=utf-8, nginx/1.16.0, 20...)</span>
+                <span class="method-start">736925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">787514 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
